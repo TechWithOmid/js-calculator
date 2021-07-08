@@ -26,12 +26,28 @@ body {
 	font-size: 15px;
 	color: #919191;
 }
+::-webkit-scrollbar {
+    width: 2px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px white; 
+    background-color: white;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #c9c7c7a8;
+    border-radius: 50px;
+    
+}
 
 #output {
 	text-align: right;
 	height: 60px;
 	margin: 10px 20px;
 	font-size: 30px;
+	overflow: scroll;
+    	overflow-y: hidden;
 }
 
 #keyboard {
